@@ -7,6 +7,15 @@ video#bgvid {
     width: auto;
     height: auto;
     z-index: 1;
-    background: white
+    background: white;
     background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+    body {
+        background: white;
+    }
+    #bgvid {
+        display: none;
+    }
 }
