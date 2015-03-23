@@ -46,9 +46,9 @@ table {
   border-spacing: 0;
 }
 /*END RESET */
+
 body {
   padding-top: 16px;
-  background: #eeeeee;
 }
 
 video#bgvid {
@@ -65,17 +65,17 @@ video#bgvid {
 }
 
 .card {
-  background: #fff;
-  width: 600px;
+  background: #f1f1f1;
+  width: 1000px;
   position: relative;
   padding: 15px;
   box-shadow: 0px 3px rgba( 0, 0, 0, 0.1);
   font-family: Open Sans;
   color: #444;
   font-size: 14px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .center-horizontal {
@@ -83,30 +83,25 @@ video#bgvid {
   margin-right: auto;
 }
 
-.new-song {
-  height: 22px;
+#new-song-form {
+  margin:0 auto;
+  height: 28px;
+  width:90%;
 }
 
-.new-song-comment {
-  width: 60%;
-  margin-right: 12px;
+#new-song-email {
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
 }
 
-.new-song-ytid {
-  width: 35%;
-  height: 26px;
+#new-song-ytid {
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
 }
 
-input[type=text] {
-  height: 26px;
-  font-size: 16pt;
-  resize: none;
-  /*border: none;
-  overflow: auto;
-  outline: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;*/
+#new-song-submit {
+  font-family: 'Roboto Slab', serif;
+  width:100%;
 }
 
 @media screen and (max-device-width: 800px) {
