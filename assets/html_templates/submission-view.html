@@ -1,11 +1,20 @@
 <!-- IGNORE -->
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
 <!-- BEGIN VIEW -->
 <div class="card">
-  <form class="new-song" action="">
-    <div>
-      <input type="text" name="new-song-comment" class="new-song-comment" maxlength="255" placeholder="What's worth listening to?">
-      <input type="text" name="new-song-ytid" class="new-song-ytid" id="" maxlength="11" placeholder="youtube id">
+  <form id="new-song-form" class="form-inline" role="form">
+    <div class="form-group col-md-8">
+      <input type="text" class="form-control " id="new-song-email" maxlength="255" placeholder="What's worth listening to?">
+    </div>
+    <div class="form-group col-md-2">
+      <input type="text" class="form-control" id="new-song-ytid" maxlength="11" placeholder="YouTube ID">
+    </div>
+    <div class="form-group col-md-2">
+      <input type="submit" class="btn btn-primary" id="new-song-submit" value="Submit">
     </div>
   </form>
 </div>
