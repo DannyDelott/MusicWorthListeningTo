@@ -24,11 +24,11 @@ app.get('/', function(req, res) {
   res.sendFile('index.html');
 });
 
-app.get('dist/vendor/react-with-jsxtransformer.min.js', function(req, res){
+app.get('dist/vendor/react-with-jsxtransformer.min.js', function(req, res) {
   res.sendFile('./dist/vendor/react-with-jsxtransformer.min.js');
 });
 
-app.get('css/style.css', function(req, res){
+app.get('css/style.css', function(req, res) {
   res.sendFile('/dist/lib.min.js');
 });
 

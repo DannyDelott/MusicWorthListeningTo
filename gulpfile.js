@@ -42,7 +42,10 @@ gulp.task('vendor', function() {
 
 });
 
-gulp.task('nodemon', function(){
+/**********************************
+ * Start the server with nodemon  *
+ * ********************************/
+gulp.task('nodemon', function() {
   nodemon({
     script: path.SERVER_SRC,
     ext: 'js html'
