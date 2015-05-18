@@ -22,7 +22,7 @@ path.CLIENT_DIR = './client/';
 path.DIST_DIR = path.CLIENT_DIR + './dist/';
 path.VENDOR_DIR = path.DIST_DIR + 'vendor/';
 
-path.INDEX_SRC = path.CLIENT_SRC + 'index.html';
+path.INDEX_SRC = path.CLIENT_DIR + 'index.html';
 
 path.REACT_DIR = path.BOWER_COMPONENTS_DIR + 'react/';
 path.REACT_SRC = [
@@ -42,7 +42,8 @@ path.SERVER_SRC = path.SERVER_DIR + 'server.js';
 
 gulp.task('default', []);
 gulp.task('build', ['vendor']);
-gulp.task('dev', ['nodemon', 'watch']);
+gulp.task('server', ['nodemon']);
+gulp.task('dev', ['build', 'watch']);
 
 /* Uglify and concat third party libraries/frameworks */
 gulp.task('vendor', function() {
@@ -64,6 +65,10 @@ gulp.task('nodemon', function() {
   });
 });
 
-gulp.task('watch', function() {
+gulp.task('log', function(){
+  console.log('yes');
+});
 
+gulp.task('watch', function() {
+  gulp.watch(path.INDEX_SRC, ['log']);
 });
