@@ -19,13 +19,15 @@ path.REACT_SRC = [
   path.REACT_DIR + 'JSXTransformer.js'
 ];
 path.REACT_MIN = 'react-with-jsxtransformer.min.js';
-
+path.SERVER_DIR = './server/';
+path.SERVER_SRC = path.SERVER_DIR + 'server.js';
 /*
  * Tasks
  */
 
 gulp.task('default', []);
 gulp.task('build', ['vendor']);
+gulp.task('dev', ['nodemon']);
 
 /*******************************************************
  * Uglify and concat third party libraries/frameworks  *
@@ -38,4 +40,11 @@ gulp.task('vendor', function() {
     .pipe(concat(path.REACT_MIN))
     .pipe(gulp.dest(path.VENDOR_DIR));
 
+});
+
+gulp.task('nodemon', function(){
+  nodemon({
+    script: path.SERVER_SRC,
+    ext: 'js html'
+  });
 });
