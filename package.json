@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A music sharing platform built on ReactJS and Firebase.",
   "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "gulp default"
+  },
   "dependencies": {
     "express": "^4.12.3"
   },
