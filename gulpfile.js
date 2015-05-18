@@ -2,10 +2,11 @@
  * NODE PACKAGES *
  * ***************/
 
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var nodemon = require('gulp-nodemon');
+var gulp = require('gulp'),
+  plumber = require('gulp-plumber'),
+  uglify = require('gulp-uglify'),
+  concat = require('gulp-concat'),
+  nodemon = require('gulp-nodemon');
 
 /* ************
  * FILE PATHS *
@@ -41,13 +42,14 @@ path.SERVER_SRC = path.SERVER_DIR + 'server.js';
 
 gulp.task('default', []);
 gulp.task('build', ['vendor']);
-gulp.task('dev', ['nodemon']);
+gulp.task('dev', ['nodemon', 'watch']);
 
 /* Uglify and concat third party libraries/frameworks */
 gulp.task('vendor', function() {
 
   // React
   gulp.src(path.REACT_SRC)
+    .pipe(plumber())
     .pipe(uglify())
     .pipe(concat(path.REACT_MIN_SRC))
     .pipe(gulp.dest(path.VENDOR_DIR));
@@ -60,4 +62,8 @@ gulp.task('nodemon', function() {
     script: path.SERVER_SRC,
     ext: 'js html'
   });
+});
+
+gulp.task('watch', function() {
+
 });
