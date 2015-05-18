@@ -1,2 +1,2 @@
 # MusicWorthListeningTo
-A music sharing platform built on ReactJS and Firebase.
+Share and grow a music playlist with a group of friends.
