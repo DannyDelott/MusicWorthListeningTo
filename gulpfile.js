@@ -10,13 +10,13 @@ var concat = require('gulp-concat');
  */
 var path = {};
 path.BOWER_COMPONENTS_DIR = './bower_components/';
-path.VENDOR_DIR = './client/js/vendor/';
+path.VENDOR_DIR = './client/dist/vendor/';
 path.REACT_DIR = path.BOWER_COMPONENTS_DIR + 'react/';
 path.REACT_SRC = [
   path.REACT_DIR + 'react.js',
   path.REACT_DIR + 'JSXTransformer.js'
 ];
-path.REACT_MIN = 'react-with-JSXTransformer.min.js';
+path.REACT_MIN = 'react-with-jsxtransformer.min.js';
 
 /*
  * Tasks
