@@ -1,0 +1,9 @@
+#player {
+  width: 100vw;
+  height: 150px;
+  background-color: #444444;
+}
+
+iframe {
+  border: 0;
+}

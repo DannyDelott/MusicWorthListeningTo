@@ -1,0 +1,43 @@
+#searchbox {
+  width: 50%;
+  float:right;
+}
+
+#searchbox-input {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  background-color: white;
+  color: black;
+  width: 100%;
+  outline: 2px black;
+  box-shadow: 2px black;
+  border-radius: 0;
+  height:42px;
+}
+#searchbox-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#searchbox-glyph {
+  color: black;
+  height:48px;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 13px;
+  pointer-events: none;
+}
+
+/* align icon */
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.right-addon input { padding-right: 30px; }

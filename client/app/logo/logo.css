@@ -1,0 +1,18 @@
+#logo{
+  display: table;
+  height:100px;
+  width: 100%;
+  padding: 16px;
+  color:#000;
+  background-color: #fff;
+}
+
+#logo h1 {
+  display: table-cell;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  font-size:42px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 0;
+}
