@@ -1,28 +1,32 @@
 {
-  "name": "MusicWorthListeningTo",
+  "name": "fixme",
   "version": "1.0.0",
-  "description": "A music sharing platform built on ReactJS and Firebase.",
-  "main": "gulpfile.js",
+  "description": "",
+  "main": "app/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "express": "^4.12.3",
-    "gulp": "^3.8.11",
-    "gulp-concat": "^2.5.2",
-    "gulp-nodemon": "^2.0.3",
-    "gulp-plumber": "^1.0.0",
-    "gulp-uglify": "^1.2.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DannyDelott/MusicWorthListeningTo.git"
+    "start": "webpack-dev-server --progress --colors --content-base build/",
+    "build": "webpack --progress --colors"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DannyDelott/MusicWorthListeningTo/issues"
-  },
-  "homepage": "https://github.com/DannyDelott/MusicWorthListeningTo"
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^5.1.10",
+    "babel-loader": "^5.0.0",
+    "bootstrap": "^3.3.5",
+    "bootstrap-webpack": "0.0.3",
+    "css-loader": "^0.10.1",
+    "exports-loader": "^0.6.2",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "font-awesome": "^4.4.0",
+    "font-awesome-webpack": "0.0.3",
+    "imports-loader": "^0.6.4",
+    "jquery": "^2.1.4",
+    "normalize.css": "^3.0.3",
+    "react": "^0.13.1",
+    "style-loader": "^0.10.2",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.8.4",
+    "webpack-dev-server": "^1.8.0"
+  }
 }
